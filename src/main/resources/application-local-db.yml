@@ -1,0 +1,39 @@
+spring:
+  datasource:
+    username: testuser # 위에서 설정한 사용자 정보 입니다.
+    password: 1234 # 위에서 설정한 사용자 정보 입니다.
+    url: jdbc:postgresql://localhost:5432/testdb
+    # jdbc url을 설정합니다. 위에서 생성한 testdb를 사용합니다.
+    driver-class-name: org.postgresql.Driver
+    # postgreSQL 드라이버를 사용합니다.
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+      # create-drop이 아닌 update를 사용하여 스키마가 변경되지 않는 이상 기존 데이터를 삭제하지 않습니다.
+    properties:
+      hibernate:
+        format_sql: true
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: sunghyuk155@gmail.com
+    password: vwuqclqkyhhrkuro
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.timeout: 5000
+      mail.smtp.starttls.enable: true
+
+logging:
+  level:
+    org.hibernate:
+      SQL: debug
+      type.descriptor.sql.BasicBinder: trace
+
+app:
+  host: http://localhost:8080
+
+server:
+  tomcat:
+    max-http-form-post-size: 5MB
