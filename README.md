@@ -20,3 +20,6 @@ Spring Boot, Thymeleaf, PostgreSQL을 사용하여 구축된 웹 기반 스터�
 - PostgreSQL
 - Spring Security
 - JavaMailSender
+
+## 구현 영상
+https://www.youtube.com/watch?v=ESsnhx6lyxg
