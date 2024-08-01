@@ -14,12 +14,12 @@ Spring Boot, Thymeleaf, PostgreSQL을 사용하여 구축된 웹 기반 스터�
 
 ## 기술 스택
 
-- Java 11
+- Java 17
 - Spring Boot
 - Thymeleaf
 - PostgreSQL
 - Spring Security
-- JavaMailSender
+
 
 ## 구현 영상
 https://www.youtube.com/watch?v=ESsnhx6lyxg
